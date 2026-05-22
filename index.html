@@ -3759,5 +3759,70 @@ function admAtualizarStatus() {
 </script>
 <!-- ══ FIM PROFESSOR VIRTUAL — JAVASCRIPT ══ -->
 
+<!-- ══ MIGRAÇÃO — cola antes do </body> no GitHub Pages ══ -->
+<style>
+  #migra-overlay {
+    position:fixed;inset:0;z-index:999999;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(0,0,0,.82);backdrop-filter:blur(4px);
+    pointer-events:all;
+  }
+  #migra-box {
+    background:#fff;border-radius:24px;padding:36px 32px 28px;
+    max-width:460px;width:92%;text-align:center;
+    border-top:6px solid #00ff41;
+    box-shadow:0 24px 64px rgba(0,0,0,.5);
+  }
+  #migra-box h2 {
+    font-family:'Playfair Display',serif;color:#1e3a5f;
+    font-size:1.4rem;margin-bottom:10px;
+  }
+  #migra-box p {
+    font-family:'Nunito',sans-serif;color:#475569;
+    font-size:.95rem;line-height:1.6;margin-bottom:22px;font-weight:600;
+  }
+  #migra-box a {
+    display:inline-block;
+    background:linear-gradient(135deg,#00ff41,#00c851);
+    color:#000;font-family:'Nunito',sans-serif;font-weight:900;
+    font-size:1rem;padding:14px 32px;border-radius:40px;
+    text-decoration:none;letter-spacing:.04em;
+    box-shadow:0 6px 20px rgba(0,255,65,.35);
+    transition:transform .2s,box-shadow .2s;
+  }
+  #migra-box a:hover {
+    transform:translateY(-2px);
+    box-shadow:0 10px 28px rgba(0,255,65,.5);
+  }
+  #migra-box small {
+    display:block;margin-top:14px;
+    font-family:'Nunito',sans-serif;font-size:.75rem;color:#94a3b8;
+  }
+  /* bloqueia tudo que está atrás */
+  body.migrado { pointer-events:none;user-select:none; }
+  #migra-overlay { pointer-events:all; }
+</style>
+
+<div id="migra-overlay">
+  <div id="migra-box">
+    <div style="font-size:2.8rem;margin-bottom:12px">🚀</div>
+    <h2>Plataforma Migrada!</h2>
+    <p>
+      A <strong>EDUC Plataforma de Aprendizagem</strong> foi transferida
+      para um novo servidor com mais velocidade, estabilidade e recursos.
+      <br><br>
+      Esta página está desativada. Acesse o endereço oficial:
+    </p>
+    <a href="https://menueduc1.web.app/" target="_blank" rel="noopener">
+      🎓 Ir para a nova plataforma →
+    </a>
+    <small>Esta versão não está mais em uso · github.io/educMenu</small>
+  </div>
+</div>
+
+<script>
+  document.body.classList.add('migrado');
+</script>
+<!-- ══ FIM MIGRAÇÃO ══ -->
 </body>
 </html>
